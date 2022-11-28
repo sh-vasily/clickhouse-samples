@@ -1,0 +1,5 @@
+kafka:
+  security_protocol: sasl_plaintext
+  sasl_mechanism: PLAIN
+  sasl_username: kafka
+  sasl_password: kafka-secret
