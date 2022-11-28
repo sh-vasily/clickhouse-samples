@@ -1,4 +1,4 @@
-CREATE TABLE default.event_log (message String) 
+CREATE TABLE default.event_log(message String) 
 ENGINE = Kafka('host.docker.internal:9092', 'Nsms', 'clickhouse-group', 'LineAsString');
 
 CREATE MATERIALIZED VIEW default.event_log_view
