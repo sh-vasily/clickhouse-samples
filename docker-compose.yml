@@ -1,0 +1,7 @@
+services:
+  clickouse:
+    image: yandex/clickhouse-server
+    ports:
+      - "8123:8123"
+    volumes:
+      - ./kafka-config.yaml:/etc/clickhouse-server/config.d/kafka-config.yaml
